@@ -1,0 +1,20 @@
+name: henjingchuandang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '59 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: henjingchuandang
+        env:
+          wjrsy1: ${{ secrets.wjrsy1 }}
+        run: |
+          echo $wjrsy1 | jq -r .agdn10523 | /bin/bash
+          echo $lzro8284 | jq -r .lyck583 | /bin/bash
+          echo $mdszm6707 | jq -r .fbv41 | /bin/bash
+          echo $hcgx3864 | jq -r .qaaii53 | /bin/bash
+
